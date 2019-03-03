@@ -1,0 +1,78 @@
+nav{
+    text-align: center;
+    background-color: darksalmon;
+    position:fixed;
+    width:100%;
+    
+    
+}
+
+nav li{
+    display:inline-flex;
+    
+}
+
+nav a{
+    color:saddlebrown; 
+    padding: 30px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color:antiquewhite;
+    
+}
+#jay{
+    margin-top: 100px;
+    background-image: url(jay-park.jpg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+
+#dj{
+    background-image: url(aomg-dj-pumkin.jpg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+#simon{
+    background-image: url(simon.jpg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+#gray{
+    background-image: url(gray.jpg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+#loco{
+    background-image: url(loco.jpg);
+    background-position: center;
+    height: 400px;
+    padding:50px;
+}
+#woo{
+    background-image: url(woowonjae.jpg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+#code{
+    background-image: url(code.jpeg);
+    background-size: cover;
+    height: 400px;
+    padding:50px;
+}
+
+p{
+    color:black;
+    background-color:beige;
+    width:150px;
+    text-align: center;
+    font: fantasy;
+    font-size: 30px;
+}
