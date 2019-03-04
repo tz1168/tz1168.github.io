@@ -24,7 +24,7 @@ nav a:hover{
     
 }
 #jay{
-    background-image: url(jay-park.jpg);
+    background-image:url(jay-park.jpg);
     background-size: cover;
     height: 400px;
     padding:50px;
