@@ -1,0 +1,89 @@
+nav{
+    text-align: center;
+    background-color: darksalmon;
+    position:fixed;
+    width:100%;
+    
+    
+    
+}
+
+nav li{
+    display:inline-flex;
+
+}
+
+nav a{
+    color:saddlebrown; 
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color:antiquewhite;
+    padding:20px;
+}
+#internet{
+    background-image:url(cloud-computing-logistics-2017-1000x640.jpg);
+    background-size: cover;
+    height: 800px;
+    padding:50px;
+}
+
+
+#history{
+    background-image: url(source3.jpg);
+    background-size: cover;
+    height: 800px;
+    padding:50px;
+}
+#problem{
+    background-image: url(Internet-and-Mental-Health.jpg);
+    background-size: cover;
+    height: 800px;
+    padding:50px;
+}
+#ecommerce{
+    background-image: url(ecommerce-web-development.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    padding:50px;
+}
+#chineseadolescents{
+    background-image: url(496debf25a290a5c5445d5282205b902.jpg);
+    background-size:cover;
+    height: 800px;
+    padding:50px;
+}
+#americanadolescents{
+    background-image: url(bigstock-Young-Boy-In-Bedroom-Using-Lap-4136945.jpg);
+    background-size: cover;
+    height: 800px;
+    padding:50px;
+}
+#more{
+    background-image: url(3037962-poster-p-1-the-truth-about-teenagers-the-internet-and-privacy.webp);
+    background-size: cover;
+    height: 800px;
+    padding:50px;
+}
+
+#sources{
+    
+    
+}
+.pp{
+    
+    color:black;
+    background-color:beige;
+    width:150px;
+    text-align: center;
+    font: fantasy;
+    font-size: 30px;
+}
+.source{
+    text-align: left;
+    
+}
