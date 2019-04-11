@@ -1,0 +1,17 @@
+.container{
+    color: black;
+}
+
+.row{
+    background-color: lightsalmon;
+    padding: 50px;
+    margin:20px;
+}
+
+.col{
+    color:aqua;
+    text-align: center;
+    background-color: lightpink;
+    padding: 50px;
+    margin:20px;
+}
