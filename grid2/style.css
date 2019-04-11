@@ -1,0 +1,37 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: middle; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 6px;
+  background-color:lightcoral;
+  padding: 20px;
+    margin:5px;
+  color: aliceblue;
+}
+
+.grid-container > div {
+  background-color:lightsteelblue;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  margin:50px;
+}
+
+.item2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3BhuDKZYXBSY2FXA4W9up5YRYqe5riLmF0jRS6iCfnMSbWDfR)
+}
+.item3{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/1_epcot_spaceship_earth_2010a.JPG/250px-1_epcot_spaceship_earth_2010a.JPG)
+       
+}
+.item4{
+    background-image: url(https://secure.parksandresorts.wdpromedia.com/resize/mwImage/1/280/157/75/wdpromedia.disney.go.com/media/wdpro-assets/parks-and-tickets/destinations/toy-story-land-campaign/prospects-101-story-card-toy-story-alien-saucers-render-16x9.jpg?23012018174659)
+}
