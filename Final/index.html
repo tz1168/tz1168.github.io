@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ExpertTA</title>
+    
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+
+<body>
+    
+
+    <div class="imgcontainer">
+      
+      <img class="logo" src="logo.png" alt="ExpertTA logo">
+    </div>
+        
+    <div class="container">
+      <label for="uname" class="username"><p>Username</p></label>
+      <input id="myUsername" type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><p>Password</p></label>
+      <input id="myPassword" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember" > Remember me
+      </label>
+        <button onclick='myFunction()' type="submit" class="login">Login</button>
+      <button type="button" class="register" onclick="window.location.href='list.html';">Register</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+
+    </div>
+
+
+    
+     <script src="script.js"></script>
+</body>
+</html>
