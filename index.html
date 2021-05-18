@@ -1,24 +1,319 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>BEIJING</title>
-</head>
+    <title>Jenny Z</title>
+    <button class="scrollToTopBtn">☝️</button>
+    
+    <!-- bootstrap css file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+ 
+    <!-- magnific popup css file -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
 <body>
-    <div class="bg-image"></div>
-    <h1>Welcome to Beijing!</h1>
-    <nav>
-        <ul class="navigationbar">
-            <li><a id="home" href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="view.html">View</a></li>
-        </ul>
-    </nav>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-UuJxmU6OCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="A glance at Beijing.">
-    </iframe>
+    
+    <!-- ==================Start Header Area===============-->
+    <header class="header_area">
+        <div class="main-menu">
+            <div class="container">
+            <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">✨about me✨ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">projects‍</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">fun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+
+     <!-- ==================End Header Area===============-->
+
+
+    <!-- ==================Start Main Area===============-->
+    <main class="site-main">
         
+
+        <!-- ==================Start Banner Area===============-->
+            <section class="site-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 site-title">
+                            <h3 class="title-text" style="font-family:Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;">Hey there...</h3>
+                            <h1 class="title-text" style="font-family:Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;">I am Jenny</h1>
+                            <h4 class="title-text text-uppercase" style="font-family:Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;">UI/UX Designer</h4>
+                            <div class="site-buttons">
+                                <div class="d-flex flex-row flex-wrap">
+                                    <a href="#aboutme"><button type="button" class="btn button primary-button mr-4">Get to know me</button></a>
+                                    <button type="button" class="btn button secondary-button" type="submit" onclick="window.open('TAO “JENNY” ZHENG-Resume.pdf')">Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 banner-image">
+                            <img src="./img/banner/banner-image.png" alt="banner=img" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        <!-- ==================End Banner Area===============-->
+
+        <!-- ==================Start About Area===============-->
+        <div class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-me.png" alt="about me" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h2 style="font-family:Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;">
+                            <span id="aboutme">Let me</span>
+                            <span>introduce</span>
+                            <span>myself...</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para" >
+                                My name is Jenny and I am currently a rising senior majoring in <b>Integrated Digital Media</b> at <b>New York University</b>. I am enroll in the B.S.M.S program so that means I will be getting my <b>Bachelor's degrees</b> by Fall 2022 and <b>Master's degrees</b> by Spring 2023.
+                            </p>
+                            <p class="para">
+                                My love for <b>User Experience Design</b> started way before I realized, and it has been integrated into almost every aspect of my life ever since. I believe that gorgeous profiles(UI) are pleasing to eyes whereas amazing soul(UX) is truely one in a million, and it's my job to create designs with both :)
+                            </p>
+                        </div>
+                        <button class="btn button primary-button" type="submit" onclick="window.open('TAO “JENNY” ZHENG-Resume.pdf')">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================End About Area===============-->
+
+        <!-- ==================Start Project Area===============-->
+        <div class="project-area">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase title-h1 text-center" id="gallery" style="font-size: 3.5rem;color: #554236; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Projects</h1>
+                    <h2 class="text-uppercase title-h2 text-center" style="font-style:italic; font-size: 1rem;color: #734338;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">School/Work/Personal</h2>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="active" data-filter="*">All</button>
+                    <button type="button" data-filter=".uiux">UI/UX</button>
+                    <button type="button" data-filter=".motion">Motion</button>
+                    <button type="button" data-filter=".still">Still</button>
+                </div>
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item uiux">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p1.jpg" alt="portfolio 1" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Urban Dictionary</h4>
+                                <span class="text-secondary">UI/UX, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item uiux">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p2.jpg" alt="portfolio 2" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">NASA Eclipse Soundscape</h4>
+                                <span class="text-secondary">UI/UX, Group</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item uiux">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p5.jpg" alt="portfolio 5" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Triplan</h4>
+                                <span class="text-secondary">UI/UX, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item still">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p4.jpg" alt="portfolio 4" style="width:90%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Dog and Pony Show</h4>
+                                <span class="text-secondary">InDesign, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item still">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p3.jpg" alt="portfolio 3" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Light a night light</h4>
+                                <span class="text-secondary">3D Modeling, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item uiux">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p6.jpg" alt="portfolio 6" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">CNN Website</h4>
+                                <span class="text-secondary">UI/UX, Group</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item motion">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p7.jpg" alt="portfolio 7" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">New Wonjo</h4>
+                                <span class="text-secondary">Motion Graphics, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item motion">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p8.jpg" alt="portfolio 8" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Why</h4>
+                                <span class="text-secondary">Motion Graphics, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item uiux">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p11.jpg" alt="portfolio 11" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Dystopia Therapy</h4>
+                                <span class="text-secondary">UI/UX, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item motion">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p9.jpg" alt="portfolio 9" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Hospital Playlist</h4>
+                                <span class="text-secondary">Film, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item motion">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/p10.jpg" alt="portfolio 10" style="width:100%">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">New York Interior</h4>
+                                <span class="text-secondary">Film, Individual</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="scrollToTopBtn">☝️</button>
+        <!-- ==================End Project Area===============-->
+    </main>
+    
+    <!-- ==================End Main Area===============-->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Connect with me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2021 All rights reserved | Made by Jenny with the tutorial from
+                        <a href="#"><span>Daily Tuition</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Jquery js file-->
+    <script src="js/jquery.3.6.0.js"></script>
+    
+    <!-- bootstrap js file-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- isotope js library-->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!-- magnific popup script file-->    
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    
+    <!-- custom js file-->
+    <script src="js/main.js"></script>    
 </body>
 </html>

@@ -1,0 +1,187 @@
+
+
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* css varia */
+@import url(./partials/_variables.css);
+
+/* global style */
+@import url(./partials/global.css);
+
+/* start navigation */
+
+.header {
+    padding: 10px 16px;
+  }
+  
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 10rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px;
+    padding:1.7rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+/* end navigation */
+
+/* Begin Banner Area */
+
+.site-main .site-banner{
+    background:url(../img/banner/home-banner.png)no-repeat;
+    background-position:0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top:20%;
+    padding-left: 20%;
+    font-weight:500;
+}
+
+
+
+.site-main .site-banner .site-title h1{
+    padding-left: 20%;
+    font-size:5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    padding-left: 52%;
+    font-size:1.4rem;
+}
+
+.site-main .site-banner .banner-image>img{
+    padding:3rem 0;
+    width: 90rem;
+}
+
+
+.site-main .site-banner .site-buttons{
+    padding-left: 20%;
+}
+/* End Banner Area */
+
+/* Start About Area */
+.site-main .about-area{
+    padding:8rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span{
+    display:block;
+    font:normal bold 49px/60px;
+    letter-spacing:21px;
+}
+
+.site-main .about-area .about-title .paragraph >p {
+    padding:0.4rem 0;
+}
+
+/* End About Area */
+
+/* Start Project Area */
+.site-main .project-area{
+    padding:4rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border:none;
+    font: normal 500 16px/130px;
+    text-transform:uppercase;
+}
+
+.site-main .project-area .button-group button:hover{
+    color: var(--primary-color);
+}
+
+.site-main .project-area .button-group button.active{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+.site-main .project-area .button-group button+button{
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+}
+.site-main .project-area .grid .our-project> .title h4{
+    font: normal 700 25px/12px;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter:brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* End Project Area */
+/* Start button Area */
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  /* End button Area */
+/* Start Footer Area */
+footer.footer-area{
+    padding:5rem 0;
+    background:url(../img/footer-bg.png)no-repeat;
+}
+footer.footer-area .social h5{
+    font:normal 500 23px/30px;
+}
+
+footer.footer-area .social a>i{
+    font-size:22px;
+    padding:2rem;
+    color:var(--border-color);
+}
+
+footer.footer-area .social a:hover>i{
+    color: var(--primary-color);
+}
+/* End Footer Area */
+
