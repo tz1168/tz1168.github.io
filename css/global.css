@@ -9,7 +9,7 @@
 .button{
     margin-top: 3rem;
     padding: 0.8rem 2.2rem;
-    font:narmal 500 16px/20px;
+    font:normal 500 16px/20px;
     position:relative;
     border:2px solid transparent;
     border-radius: 30px;
@@ -21,12 +21,14 @@
     color:whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
+    border-radius: 30px;
 }
 
 .button.primary-button:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color:black;
+    border-radius: 30px;
 }
 
 .button.primary-button::after,.button.secondary-button::after{
@@ -44,12 +46,14 @@
     background: white;
     background-clip: padding-box;
     transition: background .6s ease;
+    border-radius: 30px;
 }
 
 .button.secondary-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
+    border-radius: 30px;
 }
 
 p.para{

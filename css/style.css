@@ -26,7 +26,7 @@
 
 .header_area .main-menu .nav-item .nav-link{
     font: normal 500 15px/2px;
-    padding:1.7rem;
+    padding: 1rem;
     color: var(--title-color);
     text-transform: uppercase;
 }
