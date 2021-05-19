@@ -4,10 +4,10 @@
 @import url(./fonts.css);
 
 /* css varia */
-@import url(./partials/_variables.css);
+@import url(./_variables.css);
 
 /* global style */
-@import url(./partials/global.css);
+@import url(./global.css);
 
 /* start navigation */
 
