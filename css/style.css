@@ -4,7 +4,7 @@
 @import url(./fonts.css);
 
 /* css varia */
-@import url(./_variables.css);
+@import url(./variables.css);
 
 /* global style */
 @import url(./global.css);
