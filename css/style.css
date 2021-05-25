@@ -251,13 +251,13 @@ a:hover.back-to-top {
 }
 
   /* Start Project Page Card Area */
-.card{
+.project_card{
     margin:3rem 6rem;
     border:2px solid transparent;
     border-radius: 30px;
 }
 
-.card .card-img a:hover img{
+.card .project_card .card-img a:hover img{
     filter:brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
 }
   /* End Project Page Card Area */
