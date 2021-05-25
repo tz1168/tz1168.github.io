@@ -249,3 +249,15 @@ a.back-to-top {
 a:hover.back-to-top {
 	background-color: #2c2122;
 }
+
+  /* Start Project Page Card Area */
+.card{
+    margin:3rem 6rem;
+    border:2px solid transparent;
+    border-radius: 30px;
+}
+
+.card .card-img a:hover img{
+    filter:brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
+}
+  /* End Project Page Card Area */
