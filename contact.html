@@ -8,98 +8,221 @@
 
     
     <!-- bootstrap css file-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="css/all.min.css">
- 
-
+    <link rel="stylesheet" href="./css/all.min.css">
     <!--  custom css file  -->
+    
     <link rel="stylesheet" href="./css/style.css">
 
-
-</head>
-<body>
-    
-    <!-- ==================Start Header Area===============-->
-		<header class="header_area">
-			<div class="main-menu">
-				<div class="container">
-				<nav class="navbar sticky-top navbar-light navbar-expand-lg">
-					<a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="ms-auto"></div>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html">about me <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html#gallery">gallery</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./projects.html">projects‍</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./fun.html">fun</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="./contact.html">✨contact✨</a>
-							</li>
-						
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="./pavo/css/bootstrap.css" rel="stylesheet">
+    <link href="./pavo/css/fontawesome-all.css" rel="stylesheet">
+    <link href="./pavo/css/swiper.css" rel="stylesheet">
+	<link href="./pavo/css/magnific-popup.css" rel="stylesheet">
+	<link href="./pavo/css/styles.css" rel="stylesheet">
 	
-						</ul>
-					</div>
-				</nav>
-			</div>
-			</div>
-		</header>
-		<!-- ==================End Header Area===============-->
-        
-    <!-- ==================Start Main Area===============-->
-    <!-- ====================End Main Area===============-->
+<style>
+    .cards-2 .card .label .best-value {
+    position: relative;
+	width: 13.75rem;
+	padding: 0.3125rem 0 0.3125rem 4.125rem;
+    background-color: #F7A2A3;
+	color: #ffffff;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+}
 
-        <footer class="footer-area">
+.ex-cards-1 .card .fa-stack-2x {
+	color: #F7A2A3;
+}
+
+.ex-cards-1 .card .fa-stack-1x {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 2.125rem;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #F7A2A3;
+	border-radius: 32px;
+	background-color: #F7A2A3;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	border: 1px solid #F7A2A3;
+	background-color: transparent;
+	color: #F7A2A3;
+	text-decoration: none;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <header class="header_area">
+        <div class="main-menu">
             <div class="container">
-                <div class="">
-                    <div class="site-logo text-center py-4">
-                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="social text-center">
-                        <h5 class="text-uppercase">Connect with me</h5>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="copyrights text-center">
-                        <p class="para">
-                            Copyright ©2021 All rights reserved | Made by Jenny with the tutorial from
-                            <a href="#"><span>Daily Tuition</span></a>
-                        </p>
-                    </div>
+            <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">about me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#gallery">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projects.html">projects‍</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./fun.html">fun</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./contact.html">✨contact✨</a>
+                        </li>
+                    
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header><!-- end of navbar -->
+    <!-- end of navigation -->
+    <div class="project-area" style="max-height: 110px;">
+        <div class="container">
+            <div class="project-title">
+                <h1 class="text-uppercase title-h1 text-center" style="font-size: 3.5rem;color: #2c2122; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 3rem 0 0 0;">Contact me!</h1>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cards -->
+    <div class="ex-cards-1 pt-3 pb-3" style="margin-top: 5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x"><i class="fas fa-phone"></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Phone</h5>
+                                    <p>347-702-2677</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x"><i class="fas fa-envelope"></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Email</h5>
+                                    <p>tz1168@nyu.edu</p>
+                                    <p>zhengtao0702@gmail.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x"><i class='fas fa-home'></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Address</h5>
+                                    <p>New York, New York</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+
+                </div> <!-- end of col -->   
+            </div> <!-- end of row -->   
+        </div> <!-- end of container -->   
+    </div> <!-- end of ex-cards-1 -->
+    <!-- end of cards -->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Connect with me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2021 All rights reserved | Made by Jenny with the tutorial from
+                        <a href="#"><span>Daily Tuition</span></a> and pavo
+                    </p>
                 </div>
             </div>
-    
-        </footer>
-        <!-- Jquery js file-->
-        <script src="js/jquery.3.6.0.js"></script>
-        
-        <!-- bootstrap js file-->
-        <script src="js/bootstrap.min.js"></script>
-    
-        <!-- isotope js library-->
-        <script src="./vendor/isotope/isotope.min.js"></script>
-    
-    
-        
-        <!--  Owl-carousel js file  -->
-        <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
-        
-        <!-- custom js file-->
-        <script src="js/main.js"></script>    
-    </body>
-    </html>
+        </div>
 
+    </footer>
+    
+    
+    	
+    <!-- Scripts -->
+    <script src="./pavo/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="./pavo/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="./pavo/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="./pavo/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="./pavo/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="./pavo/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
