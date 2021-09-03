@@ -4,101 +4,466 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN Website</title>
+    <title>Nasa Soundscape</title>
 
     
     <!-- bootstrap css file-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="css/all.min.css">
- 
-
+    <link rel="stylesheet" href="./css/all.min.css">
     <!--  custom css file  -->
+    
     <link rel="stylesheet" href="./css/style.css">
 
-
-</head>
-<body>
-    
-    <!-- ==================Start Header Area===============-->
-		<header class="header_area">
-			<div class="main-menu">
-				<div class="container">
-				<nav class="navbar sticky-top navbar-light navbar-expand-lg">
-					<a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="ms-auto"></div>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html">about me <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html#gallery">gallery</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="./projects.html">✨projects‍✨</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./fun.html">fun</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./contact.html">contact</a>
-							</li>
-						
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="./pavo/css/bootstrap.css" rel="stylesheet">
+    <link href="./pavo/css/fontawesome-all.css" rel="stylesheet">
+    <link href="./pavo/css/swiper.css" rel="stylesheet">
+	<link href="./pavo/css/magnific-popup.css" rel="stylesheet">
+	<link href="./pavo/css/styles.css" rel="stylesheet">
 	
-						</ul>
-					</div>
-				</nav>
-			</div>
-			</div>
-		</header>
-		<!-- ==================End Header Area===============-->
-        
-    <!-- ==================Start Main Area===============-->
-    <!-- ====================End Main Area===============-->
+<style>
 
-        <footer class="footer-area">
+.cards-2 .card .label .best-value {
+    position: relative;
+	width: 13.75rem;
+	padding: 0.3125rem 0 0.3125rem 4.125rem;
+    background-color: #ac0000;
+	color: #ffffff;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+}
+.ex-cards-1 .card .fa-stack-2x {
+	color: #ac0000;
+}
+
+.ex-cards-1 .card .fa-stack-1x {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 2.125rem;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #ac0000;
+	border-radius: 32px;
+	background-color: #ac0000;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	border: 1px solid #ac0000;
+	background-color: transparent;
+	color: #ac0000; 
+	text-decoration: none;
+}
+
+.video-responsive{
+    overflow:hidden;
+	margin-top: 0;
+	margin-left:8rem;
+	margin-right:8rem;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <header class="header_area">
+        <div class="main-menu">
             <div class="container">
-                <div class="">
-                    <div class="site-logo text-center py-4">
-                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="social text-center">
-                        <h5 class="text-uppercase">Connect with me</h5>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="copyrights text-center">
-                        <p class="para">
-                            Copyright ©2021 All rights reserved | Made by Jenny with the tutorial from
-                            <a href="#"><span>Daily Tuition</span></a>
+            <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">about me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#gallery">gallery</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./projects.html">✨projects‍✨</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./fun.html">fun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">contact</a>
+                        </li>
+                    
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header><!-- end of navbar -->
+    <!-- end of navigation -->
+    <div class="project-area" style="max-height: 80px;">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1 text-center" style="font-size: 3.5rem;color: #ac0000; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-top: 3rem;">CNN Website</h1>
+                <h2 class="text-uppercase title-h2 text-center" style="font-style:italic; font-size: 1rem;color: #000000;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-top: 0rem;">User Research, Competitive Analysis, Wireframing, Prototyping, User Testing... </h2>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p2.jpg" alt="nasa image" style="max-width: 100%; ">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Cards -->
+    <div class="ex-cards-1 pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x">W</span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Why</h5>
+                                    <p>Because the orginal website is outdated and people's ways of perceiving information is rapidly changing. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x">W</span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>What</h5>
+                                    <p> An updated version of the orginal website that has multiple new functions and ways to interact while reading news</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x">W</span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Who, When, and How</h5>
+                                    <p>Group Project w/ Shipon and Tracy</p>
+                                    <p>2020.02-2020.05</p>
+                                    <p>Adobe XD, Adobe Photoshop, Adobe Illustrator..</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+
+                </div> <!-- end of col -->   
+            </div> <!-- end of row -->   
+        </div> <!-- end of container -->   
+    </div> <!-- end of ex-cards-1 -->
+    <!-- end of cards -->
+
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mb-5" style="background-color:#ffeabc65;">
+                        <h3>Project Intro</h3>
+                        <p>The “Crisis News Network,” CNN, is the largest syndicate of breaking news and other news worldwide. They focus on the 20s-30s audience. Their website updates users on the latest news, with trending and “breaking” news stories on top, and organized by category (such as sports, world, science, tech, travel, etc.) further down the page. Currently the site includes a lot of long, uniform text/headlines on a white background, some images, and a lot of paid sponsored content at the bottom of article pages.</p>
+                        <p>We believe there is a need for the CNN news site to be more personalizable, and to have features similar to that of social media platforms in order to foster more engagement and news discussion. Currently, the CNN site has no user account system; the new site would allow users to log in and keep track of their “interests” so that the site can present content in a way that caters to them. The updated site would also include a system where users can see friend/follower activity (likes, dislikes, comments 
+                            on articles), as well as review their own activity on the site over time. We believe this would lead to more discovery and discussion of news. 
                         </p>
-                    </div>
+                       
+                        <p class="mb-5"><b>Let me introduce you to the new CNN Website...</b></p>
+                        
+                    </div> <!-- end of text-box -->
+
+                    <h5><small>The Problem</small></h5>                       
+                    <h2 class="mb-4">Business Needs/Product Objectives</h2>
+                    <p class="mb-5"> To gain more users and increase engagement on the CNN site.
+                    </p>
+                    <img class="img-fluid mb-5" src="./img/nasa/image.png" alt="alternative">
+                    <h2 class="mb-3">User Needs</h2>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Persistence</strong> 
+                                <br> Number of days volunteers are executing tasks</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Quantity</strong> 
+                                <br>Number of completed tasks/sound recordings
+                                <br>How many people visit the website/app
+                                <br>How often do they visit
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Intensity</strong> 
+                                <br> Total time spent by volunteers in executing project tasks</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Quality</strong>
+                                <br>Reliability of contributed data
+                                <br>Users’ uploading feedback/academic response</div>
+                        </li>
+                    </ul>
+
+                    
+
+                    <h5><small>The Research</small></h5>
+                    <h2 class="mb-4">Main Takeaways</h2>
+                    <p>After collecting the responses from quantitative surveys and interviews, we found out Spotify and YouTube are two of the most common platforms associated with sound people normally use. Users’ favorite features are the ability to customize their own playlists and to share with others. The frustrations people have encountered the most is the advertisements  
+                    </p>
+                    <p>In terms of online training courses that we are going to implement into our website, our interviewees want the ability to change the playback speed and to skip around easily so they can focus on materials they want to learn about. In order to have more motivation to learn, our interviewees also want a rewarding system, pop quizzes, easy communication with other students and also lots of visualizations of the learning materials etc. 
+                    </p>
+                    <p>
+                        The main reason our interviewees want to learn something new is that they are hoping to gain knowledge and skills that will help them in the future. And if they were to learn about sound data, what excites and intrigues them the most are the visualizations of the sound, fun analysis, and also the reasons/stories behind the sound data. 
+                    </p>
+                    <p>In terms of the current website of the Citizen Science Project, our interviewees found it a little difficult to enjoy: there is too much text displaying on the website with no consistency of styles. It lacks a clear hierarchy of information and the navigation bar is also confusing. The home page is not visually appealing and interesting which discourages the users to continue exploring the website. It is also not consistent with image sizes, aesthetics and style etc. 
+                    </p>
+                    <p>In order to have a more accessible website, our interviewees suggested that a good website should be simple and also visually appealing. It should have a clear hierarchy of information and also be responsive to different platforms and devices. A live chat with customer service would also be a plus for a website as well. 
+                    </p>
+                    <p class="mb-5">When asked about where they want to see our sound datas, our interviewees suggested that they want to see the datas on a secondary page instead of the home page. However, there should be a clear navigation/indication on the home page as well as the navigation bar that will lead the user to the data page. Our interviewees also preferred to see 2D visualizations of the sound datas like bars, circles and sound waves of different colors that would easily acknowledge them with different information.
+                    </p>
+
+
+
+                    <h2 class="mb-4">Interview</h2>
+                    <h5 class="mb-4">Online Workshop/Training</h5>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Ability to change the playback speed and to skip around easily.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Rewarding system, pop quizzes, easy communication with other students, visualizations of the learning materials.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Knowledge and skills that are useful in the future.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Visualizations of the sound, fun analysis, and also the reasons/stories behind the sound data.
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 class="mb-4">Problem with Current Website</h5>
+                    <ul class="list-unstyled li-space-lg mb-5"> 
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Too much text displaying on the website.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Lack of a clear hierarchy of information. 
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Navigation bar is confusing.
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Not consistent with image sizes.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Not visually appealing.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h5><small>The Design</small></h5> 
+
+                    <h2 class="mb-4">Persona</h2>
+                    <img class="img-fluid mb-5" src="./img/nasa/persona.png" alt="alternative">
+                   
+                    <h2 class="mb-4">Journey Map</h2>
+                    <img class="img-fluid mb-5" src="./img/nasa/journey_map.png" alt="alternative">
+                    
+                    <h2 class="mb-4">Site Map</h2>
+                    <img class="img-fluid mb-5" src="./img/nasa/site_map.png" alt="alternative">
+                    
+                    <h2 class="mb-4">Sketches</h2>
+                    <div class="row">
+                        <div class="column">
+                          <img src="./img/nasa/sketch_1.png" alt="Snow" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="./img/nasa/sketch_2.png" alt="Forest" style="width:100%">
+                        </div>
+                      </div>
+                    
+                    <h2 class="mb-4">Initial Wireframes</h2>
+                    <img class="img-fluid mb-5" src="./img/nasa/wireframes.jpg" alt="alternative">
+                    <p class="mb-5">*prototype link below</p>
+                    
+                    <h2 class="mb-3">Data Visualization Accessibility</h2>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Deuteranopia</strong> is a type of red-green color blindness characterized by the inability to distinguish red and green pigments.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Protanopia</strong> is blindness to red, a state in which the red cones are absent, leaving only the cones that absorb blue and green light.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Tritanopia</strong> is a condition where a person cannot distinguish between blue and yellow colors.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Grayscale</strong> is a complete lack of the perception of color in a subject, seeing only in black, white, and shades of grey.</div>
+                        </li>
+                    </ul>
+							<section id="content" class="main mb-5" >
+								<div class="video-responsive">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/oRRu-jKE5xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+                                    
+								</section>
+                        <img class="img-fluid mb-5" src="./img/nasa/color_contrast.png" alt="alternative" style="display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 80%;">
+
+
+
+                    
+
+                    <h5><small>The Final Product</small></h5> 
+                    <h2 class="mb-4">Prototype</h2>
+                    <img class="img-fluid mb-5" src="./img/nasa/prototype_showcase.png" alt="alternative">
+
+                    
+                    <a class="btn-solid-reg mb-5" href="https://www.figma.com/proto/YtQC5W9UET1ZjBk3nfQekC/UX-Team-Project?page-id=0%3A1&node-id=50%3A255&viewport=177%2C-130%2C0.07571465522050858&scaling=min-zoom" 
+                    style="display: block; margin-left: auto; margin-right: auto; width: 40%; text-align: center;">Explore Prototype</a>
+                    <h2 class="mb-3">Retrospective</h2>
+                    <p class="mb-4">Future Focus</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Design --</strong> Color Contrast / Videos - captions & transcript / Semantic Structure / Labeled Forms</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Development --</strong> Alternative Text / Correct Use of Headers / Labels / Keyboard Accessible
+                                </div>
+                        </li>
+                        
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Connect with me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2021 All rights reserved | Made by Jenny with the tutorial from
+                        <a href="#"><span>Daily Tuition</span></a> and pavo
+                    </p>
                 </div>
             </div>
-    
-        </footer>
-        <!-- Jquery js file-->
-        <script src="js/jquery.3.6.0.js"></script>
-        
-        <!-- bootstrap js file-->
-        <script src="js/bootstrap.min.js"></script>
-    
-        <!-- isotope js library-->
-        <script src="./vendor/isotope/isotope.min.js"></script>
+        </div>
+
+    </footer>
     
     
-        
-        <!--  Owl-carousel js file  -->
-        <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
-        
-        <!-- custom js file-->
-        <script src="js/main.js"></script>    
-    </body>
-    </html>
+    	
+    <!-- Scripts -->
+    <script src="./pavo/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="./pavo/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="./pavo/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="./pavo/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="./pavo/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="./pavo/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
