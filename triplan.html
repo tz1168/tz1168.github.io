@@ -75,6 +75,23 @@
 	color: #55939C; 
 	text-decoration: none;
 }
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 12px;
+	bottom: 12px;
+	display: none;
+	width: 42px;
+	height: 42px;
+	border-radius: 30px;
+	background: #55939C url("./pavo/images/up-arrow.png") no-repeat center 47%;
+	background-size: 18px 18px;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color: #F9C37F;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -132,7 +149,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p5.jpg" alt="nasa image" style="max-width: 100%; ">
+                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p5.jpg" alt="nasa image" style="max-width: 100%; border-radius: 15px 50px;">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -215,7 +232,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="text-box mb-5" style="background-color:#b0d8df44;">
+                    <div class="text-box mb-5" style="background-color:#b0d8df44;border-radius: 30px;">
                         <h3>Project Intro</h3>
                         <p>Trips and vacations are always exciting and exhilarating. 
                             However, not everyone enjoys the preproduction process of making plans and searching all over the internet to get to the right places. 
@@ -228,7 +245,7 @@
                         <h5><small>The Problem</small></h5>                       
                     <h2 class="mb-4">Problem Statement</h2>
                     <p>People like travelers need a way to plan and organize trips in a more convenient way, which can be resolved by a travel planning app that works as a travel calendar and and also a search engine for publish crowd-sourced reviews.</p>
-                    <img class="img-fluid mb-5" src="./img/triplan/howitworks.png" alt="alternative" style="display: block; margin-left: auto; margin-right: auto; width: 100%; text-align: center;">
+                    <img class="img-fluid mb-5" src="./img/triplan/howitworks.png" alt="alternative" style="display: block; margin-left: auto; margin-right: auto; width: 100%; text-align: center;border-radius: 15px 50px;">
 
                    
                     <h2 class="mb-3">Feature Prioritization</h2>

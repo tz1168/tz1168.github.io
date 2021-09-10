@@ -75,6 +75,23 @@
 	color: #0D4E8D; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 12px;
+	bottom: 12px;
+	display: none;
+	width: 42px;
+	height: 42px;
+	border-radius: 30px;
+	background: #0D4E8D url("./pavo/images/up-arrow.png") no-repeat center 47%;
+	background-size: 18px 18px;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color: #232a3b;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -132,7 +149,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p1.jpg" alt="urban dictionary image" style="max-width: 100%; ">
+                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p1.jpg" alt="urban dictionary image" style="max-width: 100%;border-radius: 15px 50px; ">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -212,7 +229,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="text-box mb-5">
+                    <div class="text-box mb-5"style="border-radius: 30px;">
                         <h3>Project Intro</h3>
                         <p>Have you ever experienced any of the following scenarios?
                             Have you ever been in a group chat with 999+ messages unread?
@@ -234,7 +251,7 @@
                     <h2 class="mb-4">Problem Statement</h2>
                     <p>People like international students studying in the U.S have trouble with understanding American Culture (slang, jokes, references, etc...), which can be resolved by a dictionary app to learn the meaning and usage.</p>
                     <p class="mb-5">We know we’re right when more international students download our app.</p>
-                    <img class="img-fluid mb-5" src="./img/urban/meme.jpg" alt="alternative">
+                    <img class="img-fluid mb-5" src="./img/urban/meme.jpg" alt="alternative" style="border-radius: 20px;">
 
                    
                     <h2 class="mb-3">Feature Prioritization</h2>

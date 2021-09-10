@@ -92,6 +92,23 @@
     width:100%;
     position:absolute;
 }
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 12px;
+	bottom: 12px;
+	display: none;
+	width: 42px;
+	height: 42px;
+	border-radius: 30px;
+	background: #EC6B38 url("./pavo/images/up-arrow.png") no-repeat center 47%;
+	background-size: 18px 18px;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+	background-color: #000000;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -149,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p2.jpg" alt="nasa image" style="max-width: 100%; ">
+                    <img class="img-fluid mt-5 mb-3" src="./pavo/images/p2.jpg" alt="nasa image" style="max-width: 100%;border-radius: 15px 50px; ">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -229,7 +246,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="text-box mb-5" style="background-color:#ffeabc65;">
+                    <div class="text-box mb-5" style="background-color:#ffeabc65;border-radius: 30px;">
                         <h3>Project Intro</h3>
                         <p>The ARISA Lab is working on the next Eclipse Soundscape project that is coming up in 2022/2023.</p>
                         <p>With the help of citizen scientists, NASA subject matter experts (SMEs) will collect audio recordings from eclipses
@@ -247,7 +264,7 @@
                     <h2 class="mb-4">Problem Statement</h2>
                     <p class="mb-5"> People like citizen scientists have need with learning and research about the impact of the eclipse on soundscape which can be resolved by an accessible educational platform to search and analyze sound data and how the eclipse affects life on earth. We know we’re right when our users continuously engaging in our website.
                     </p>
-                    <img class="img-fluid mb-5" src="./img/nasa/image.png" alt="alternative">
+                    <img class="img-fluid mb-5" src="./img/nasa/image.png" alt="alternative" style="border-radius: 20px">
                     <h2 class="mb-3">Key Performance Indicators</h2>
                     <ul class="list-unstyled li-space-lg mb-5">
                         <li class="media">
