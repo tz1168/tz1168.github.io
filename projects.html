@@ -18,7 +18,45 @@
     <link rel="stylesheet" href="./css/style.css">
 
 <style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project_container:hover .image {
+  opacity: 0.3;
+}
+
+.project_container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
     
 </style>
 </head>
@@ -72,18 +110,33 @@
         </div>   
     <!-- ==================Start Main Area===============-->
     <div>
+        <div class="project_container">
         <a href="./nasa.html"><div class="card project_card">
             <img src="./pavo/images/p2.jpg" class="card-img" alt="..." style="border-radius: 15px 50px;">
-          </div>
+            <div class="middle">
+                <div class="text" style="font-size:1.5vw; background-color: #aa5d04;">Learn more about Eclipse Soundscapes >></div> 
+        </div>
+        </div>
         </a>
-        <a href="./urban.html"> <div class="card project_card">
-        <img src="./pavo/images/p1.jpg" class="card-img" alt="..." style="border-radius: 15px 50px;"> 
-      </div>
-    </a>
-    <a href="./triplan.html"><div class="card project_card">
-        <img src="./pavo/images/p5.jpg" class="card-img" alt="..." style="border-radius: 15px 50px;">
-      </div>
-    </a>
+        </div>
+        <div class="project_container">
+            <a href="./nasa.html"><div class="card project_card">
+                <img src="./pavo/images/p1.jpg" class="card-img" alt="..." style="border-radius: 15px 50px;">
+                <div class="middle">
+                    <div class="text" style="font-size:1.5vw;background-color: #19397c">Learn more about Urban Dictionary >></div> 
+            </div>
+            </div>
+            </a>
+            </div>
+            <div class="project_container">
+                <a href="./nasa.html"><div class="card project_card">
+                    <img src="./pavo/images/p5.jpg" class="card-img" alt="..." style="border-radius: 15px 50px;">
+                    <div class="middle">
+                        <div class="text" style="font-size:1.5vw;background-color: #197c7c">Learn more about Triplan >></div> 
+                </div>
+                </div>
+                </a>
+                </div>
     </div>
     <!-- ====================End Main Area===============-->
 
